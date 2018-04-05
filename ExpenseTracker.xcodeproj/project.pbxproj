@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A2914912075D84C00263F43 /* ShopCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2914902075D84C00263F43 /* ShopCellTableViewCell.swift */; };
+		8A2914932075DD4100263F43 /* AmountIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2914922075DD4100263F43 /* AmountIndicatorView.swift */; };
+		8A2914942075DD4300263F43 /* AmountIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2914922075DD4100263F43 /* AmountIndicatorView.swift */; };
+		8A2914962075DD5900263F43 /* AmountIndicatorViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2914952075DD5900263F43 /* AmountIndicatorViewTests.swift */; };
+		8A2914982075E56300263F43 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2914972075E56300263F43 /* ShopViewController.swift */; };
+		8A29149A2075E99900263F43 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2914992075E99900263F43 /* ItemTableViewCell.swift */; };
 		8AF3E22E2075A8DB00742B15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E22D2075A8DB00742B15 /* AppDelegate.swift */; };
 		8AF3E2302075A8DB00742B15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E22F2075A8DB00742B15 /* ViewController.swift */; };
 		8AF3E2332075A8DB00742B15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF3E2312075A8DB00742B15 /* Main.storyboard */; };
 		8AF3E2352075A8DC00742B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF3E2342075A8DC00742B15 /* Assets.xcassets */; };
 		8AF3E2382075A8DC00742B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF3E2362075A8DC00742B15 /* LaunchScreen.storyboard */; };
-		8AF3E2432075A8DC00742B15 /* ExpenseTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E2422075A8DC00742B15 /* ExpenseTrackerTests.swift */; };
 		8AF3E24E2075A91900742B15 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E24D2075A91900742B15 /* Store.swift */; };
 		8AF3E2502075A98C00742B15 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E24F2075A98C00742B15 /* StoreTests.swift */; };
 		8AF3E2512075A9C900742B15 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E24D2075A91900742B15 /* Store.swift */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A2914902075D84C00263F43 /* ShopCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCellTableViewCell.swift; sourceTree = "<group>"; };
+		8A2914922075DD4100263F43 /* AmountIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountIndicatorView.swift; sourceTree = "<group>"; };
+		8A2914952075DD5900263F43 /* AmountIndicatorViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountIndicatorViewTests.swift; sourceTree = "<group>"; };
+		8A2914972075E56300263F43 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		8A2914992075E99900263F43 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		8AF3E22A2075A8DA00742B15 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF3E22D2075A8DB00742B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF3E22F2075A8DB00742B15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +53,6 @@
 		8AF3E2372075A8DC00742B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AF3E2392075A8DC00742B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AF3E23E2075A8DC00742B15 /* ExpenseTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AF3E2422075A8DC00742B15 /* ExpenseTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerTests.swift; sourceTree = "<group>"; };
 		8AF3E2442075A8DC00742B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AF3E24D2075A91900742B15 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		8AF3E24F2075A98C00742B15 /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
@@ -98,6 +107,10 @@
 				8AF3E25F2075C53600742B15 /* Models */,
 				8AF3E22D2075A8DB00742B15 /* AppDelegate.swift */,
 				8AF3E22F2075A8DB00742B15 /* ViewController.swift */,
+				8A2914972075E56300263F43 /* ShopViewController.swift */,
+				8A2914902075D84C00263F43 /* ShopCellTableViewCell.swift */,
+				8A2914992075E99900263F43 /* ItemTableViewCell.swift */,
+				8A2914922075DD4100263F43 /* AmountIndicatorView.swift */,
 				8AF3E24D2075A91900742B15 /* Store.swift */,
 			);
 			path = ExpenseTracker;
@@ -106,8 +119,8 @@
 		8AF3E2412075A8DC00742B15 /* ExpenseTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				8AF3E2422075A8DC00742B15 /* ExpenseTrackerTests.swift */,
 				8AF3E24F2075A98C00742B15 /* StoreTests.swift */,
+				8A2914952075DD5900263F43 /* AmountIndicatorViewTests.swift */,
 				8AF3E2442075A8DC00742B15 /* Info.plist */,
 			);
 			path = ExpenseTrackerTests;
@@ -224,12 +237,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2914932075DD4100263F43 /* AmountIndicatorView.swift in Sources */,
 				8AF3E2532075AA7500742B15 /* Receipt.swift in Sources */,
+				8A2914982075E56300263F43 /* ShopViewController.swift in Sources */,
 				8AF3E2302075A8DB00742B15 /* ViewController.swift in Sources */,
+				8A29149A2075E99900263F43 /* ItemTableViewCell.swift in Sources */,
 				8AF3E22E2075A8DB00742B15 /* AppDelegate.swift in Sources */,
 				8AF3E25B2075BC7900742B15 /* Shop.swift in Sources */,
 				8AF3E2552075ABC700742B15 /* ReceiptItem.swift in Sources */,
 				8AF3E24E2075A91900742B15 /* Store.swift in Sources */,
+				8A2914912075D84C00263F43 /* ShopCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,9 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A2914962075DD5900263F43 /* AmountIndicatorViewTests.swift in Sources */,
+				8A2914942075DD4300263F43 /* AmountIndicatorView.swift in Sources */,
 				8AF3E2582075B83000742B15 /* Receipt.swift in Sources */,
 				8AF3E2502075A98C00742B15 /* StoreTests.swift in Sources */,
-				8AF3E2432075A8DC00742B15 /* ExpenseTrackerTests.swift in Sources */,
 				8AF3E25C2075C08800742B15 /* Shop.swift in Sources */,
 				8AF3E2592075B83000742B15 /* ReceiptItem.swift in Sources */,
 				8AF3E2512075A9C900742B15 /* Store.swift in Sources */,

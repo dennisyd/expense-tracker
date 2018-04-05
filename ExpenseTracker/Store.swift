@@ -18,7 +18,18 @@ class Store {
     init() {
     }
     
-    func download(completion: @escaping (String?, Error?) -> Void) {
+    func update(completion: @escaping ( Error? ) -> Void) {
+        self.download(completion: { path, error in
+            if (error == nil && path != nil) {
+                let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .mappedIfSafe)
+                self.process(data: data!)
+                completion(nil)
+            }
+            completion(error)
+        })
+    }
+    
+    internal func download(completion: @escaping (String?, Error?) -> Void) {
         let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let destinationUrl = documentsUrl.appendingPathComponent(sourceURL.lastPathComponent)
         
@@ -60,17 +71,7 @@ class Store {
         task.resume()
     }
     
-    func update(completion: @escaping () -> Void) {
-        self.download(completion: { path, error in
-            if (error != nil && path != nil) {
-                let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .mappedIfSafe)
-                self.process(data: data!)
-                completion()
-            }
-        })
-    }
-    
-    func process(data: Data) {
+    internal func process(data: Data) {
         do {
             receipts = try JSONDecoder().decode([Receipt].self, from: data)
             

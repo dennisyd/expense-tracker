@@ -175,6 +175,8 @@ class StoreTests: XCTestCase {
         let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         let destinationUrl = documentsUrl.appendingPathComponent(sourceURL.lastPathComponent)
         
+        try? FileManager().removeItem(atPath: destinationUrl.path)
+        
         XCTAssertFalse(FileManager().fileExists(atPath: destinationUrl.path))
         
         let expectation = XCTestExpectation(description: "Download data from server")
@@ -190,6 +192,19 @@ class StoreTests: XCTestCase {
             expectation.fulfill()
         })
         
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
+    func testUpdateStore() {
+        let store = Store()
+        XCTAssertEqual(0, store.receipts.count)
+        let expectation = XCTestExpectation(description: "Download data from server")
+        
+        store.update(completion: { error in
+            XCTAssertNil(error)
+            XCTAssertEqual(8, store.receipts.count)
+            expectation.fulfill()
+        })
         wait(for: [expectation], timeout: 10.0)
     }
     
