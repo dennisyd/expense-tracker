@@ -12,6 +12,7 @@ class ShopCellTableViewCell: UITableViewCell {
 
     @IBOutlet weak var shopNameLabel: UILabel!
     @IBOutlet weak var shopTotalLabel: UILabel!
+    @IBOutlet weak var amountIndicatorView: AmountIndicatorView!
     
     weak var shop: Shop!
     
@@ -30,6 +31,7 @@ class ShopCellTableViewCell: UITableViewCell {
         self.shop = shop;
         shopNameLabel.text = shop.name
         shopTotalLabel.text = "$\(String(format: "%.2f", shop.total))"
+        amountIndicatorView.setValue(value: shop.total)
     }
 
 }
