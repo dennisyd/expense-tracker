@@ -13,6 +13,12 @@ class ReceiptItem: Codable {
     var price: Double
     var EAN: String!
     
+    var priceFormatted: String {
+        get {
+            return "$\(String(format: "%.2f", self.price))"
+        }
+    }
+    
     private enum CodingKeys: String, CodingKey {
         case name
         case price

@@ -19,6 +19,12 @@ class Shop {
         }
     }
     
+    var totalFormatted: String {
+        get {
+            return "$\(String(format: "%.2f", self.total))"
+        }
+    }
+    
     var items: [ReceiptItem] {
         get {
             let items = receipts.flatMap { $0.items }
