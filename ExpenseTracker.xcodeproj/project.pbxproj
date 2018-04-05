@@ -18,7 +18,6 @@
 		8AF3E2332075A8DB00742B15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF3E2312075A8DB00742B15 /* Main.storyboard */; };
 		8AF3E2352075A8DC00742B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF3E2342075A8DC00742B15 /* Assets.xcassets */; };
 		8AF3E2382075A8DC00742B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF3E2362075A8DC00742B15 /* LaunchScreen.storyboard */; };
-		8AF3E2432075A8DC00742B15 /* ExpenseTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E2422075A8DC00742B15 /* ExpenseTrackerTests.swift */; };
 		8AF3E24E2075A91900742B15 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E24D2075A91900742B15 /* Store.swift */; };
 		8AF3E2502075A98C00742B15 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E24F2075A98C00742B15 /* StoreTests.swift */; };
 		8AF3E2512075A9C900742B15 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E24D2075A91900742B15 /* Store.swift */; };
@@ -54,7 +53,6 @@
 		8AF3E2372075A8DC00742B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AF3E2392075A8DC00742B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AF3E23E2075A8DC00742B15 /* ExpenseTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AF3E2422075A8DC00742B15 /* ExpenseTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerTests.swift; sourceTree = "<group>"; };
 		8AF3E2442075A8DC00742B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AF3E24D2075A91900742B15 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		8AF3E24F2075A98C00742B15 /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 		8AF3E2412075A8DC00742B15 /* ExpenseTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				8AF3E2422075A8DC00742B15 /* ExpenseTrackerTests.swift */,
 				8AF3E24F2075A98C00742B15 /* StoreTests.swift */,
 				8A2914952075DD5900263F43 /* AmountIndicatorViewTests.swift */,
 				8AF3E2442075A8DC00742B15 /* Info.plist */,
@@ -261,7 +258,6 @@
 				8A2914942075DD4300263F43 /* AmountIndicatorView.swift in Sources */,
 				8AF3E2582075B83000742B15 /* Receipt.swift in Sources */,
 				8AF3E2502075A98C00742B15 /* StoreTests.swift in Sources */,
-				8AF3E2432075A8DC00742B15 /* ExpenseTrackerTests.swift in Sources */,
 				8AF3E25C2075C08800742B15 /* Shop.swift in Sources */,
 				8AF3E2592075B83000742B15 /* ReceiptItem.swift in Sources */,
 				8AF3E2512075A9C900742B15 /* Store.swift in Sources */,
