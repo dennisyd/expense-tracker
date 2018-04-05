@@ -13,6 +13,15 @@
 		8AF3E2352075A8DC00742B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF3E2342075A8DC00742B15 /* Assets.xcassets */; };
 		8AF3E2382075A8DC00742B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF3E2362075A8DC00742B15 /* LaunchScreen.storyboard */; };
 		8AF3E2432075A8DC00742B15 /* ExpenseTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E2422075A8DC00742B15 /* ExpenseTrackerTests.swift */; };
+		8AF3E24E2075A91900742B15 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E24D2075A91900742B15 /* Store.swift */; };
+		8AF3E2502075A98C00742B15 /* StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E24F2075A98C00742B15 /* StoreTests.swift */; };
+		8AF3E2512075A9C900742B15 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E24D2075A91900742B15 /* Store.swift */; };
+		8AF3E2532075AA7500742B15 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E2522075AA7500742B15 /* Receipt.swift */; };
+		8AF3E2552075ABC700742B15 /* ReceiptItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E2542075ABC700742B15 /* ReceiptItem.swift */; };
+		8AF3E2582075B83000742B15 /* Receipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E2522075AA7500742B15 /* Receipt.swift */; };
+		8AF3E2592075B83000742B15 /* ReceiptItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E2542075ABC700742B15 /* ReceiptItem.swift */; };
+		8AF3E25B2075BC7900742B15 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E25A2075BC7900742B15 /* Shop.swift */; };
+		8AF3E25C2075C08800742B15 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E25A2075BC7900742B15 /* Shop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,11 @@
 		8AF3E23E2075A8DC00742B15 /* ExpenseTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF3E2422075A8DC00742B15 /* ExpenseTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerTests.swift; sourceTree = "<group>"; };
 		8AF3E2442075A8DC00742B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF3E24D2075A91900742B15 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		8AF3E24F2075A98C00742B15 /* StoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
+		8AF3E2522075AA7500742B15 /* Receipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt.swift; sourceTree = "<group>"; };
+		8AF3E2542075ABC700742B15 /* ReceiptItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptItem.swift; sourceTree = "<group>"; };
+		8AF3E25A2075BC7900742B15 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +91,14 @@
 		8AF3E22C2075A8DA00742B15 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
-				8AF3E22D2075A8DB00742B15 /* AppDelegate.swift */,
-				8AF3E22F2075A8DB00742B15 /* ViewController.swift */,
+				8AF3E2362075A8DC00742B15 /* LaunchScreen.storyboard */,
 				8AF3E2312075A8DB00742B15 /* Main.storyboard */,
 				8AF3E2342075A8DC00742B15 /* Assets.xcassets */,
-				8AF3E2362075A8DC00742B15 /* LaunchScreen.storyboard */,
 				8AF3E2392075A8DC00742B15 /* Info.plist */,
+				8AF3E25F2075C53600742B15 /* Models */,
+				8AF3E22D2075A8DB00742B15 /* AppDelegate.swift */,
+				8AF3E22F2075A8DB00742B15 /* ViewController.swift */,
+				8AF3E24D2075A91900742B15 /* Store.swift */,
 			);
 			path = ExpenseTracker;
 			sourceTree = "<group>";
@@ -91,9 +107,20 @@
 			isa = PBXGroup;
 			children = (
 				8AF3E2422075A8DC00742B15 /* ExpenseTrackerTests.swift */,
+				8AF3E24F2075A98C00742B15 /* StoreTests.swift */,
 				8AF3E2442075A8DC00742B15 /* Info.plist */,
 			);
 			path = ExpenseTrackerTests;
+			sourceTree = "<group>";
+		};
+		8AF3E25F2075C53600742B15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8AF3E2522075AA7500742B15 /* Receipt.swift */,
+				8AF3E25A2075BC7900742B15 /* Shop.swift */,
+				8AF3E2542075ABC700742B15 /* ReceiptItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF3E2532075AA7500742B15 /* Receipt.swift in Sources */,
 				8AF3E2302075A8DB00742B15 /* ViewController.swift in Sources */,
 				8AF3E22E2075A8DB00742B15 /* AppDelegate.swift in Sources */,
+				8AF3E25B2075BC7900742B15 /* Shop.swift in Sources */,
+				8AF3E2552075ABC700742B15 /* ReceiptItem.swift in Sources */,
+				8AF3E24E2075A91900742B15 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF3E2582075B83000742B15 /* Receipt.swift in Sources */,
+				8AF3E2502075A98C00742B15 /* StoreTests.swift in Sources */,
 				8AF3E2432075A8DC00742B15 /* ExpenseTrackerTests.swift in Sources */,
+				8AF3E25C2075C08800742B15 /* Shop.swift in Sources */,
+				8AF3E2592075B83000742B15 /* ReceiptItem.swift in Sources */,
+				8AF3E2512075A9C900742B15 /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
