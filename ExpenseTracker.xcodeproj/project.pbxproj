@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A2914912075D84C00263F43 /* ShopCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2914902075D84C00263F43 /* ShopCellTableViewCell.swift */; };
 		8AF3E22E2075A8DB00742B15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E22D2075A8DB00742B15 /* AppDelegate.swift */; };
 		8AF3E2302075A8DB00742B15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3E22F2075A8DB00742B15 /* ViewController.swift */; };
 		8AF3E2332075A8DB00742B15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF3E2312075A8DB00742B15 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A2914902075D84C00263F43 /* ShopCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopCellTableViewCell.swift; sourceTree = "<group>"; };
 		8AF3E22A2075A8DA00742B15 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF3E22D2075A8DB00742B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF3E22F2075A8DB00742B15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				8AF3E25F2075C53600742B15 /* Models */,
 				8AF3E22D2075A8DB00742B15 /* AppDelegate.swift */,
 				8AF3E22F2075A8DB00742B15 /* ViewController.swift */,
+				8A2914902075D84C00263F43 /* ShopCellTableViewCell.swift */,
 				8AF3E24D2075A91900742B15 /* Store.swift */,
 			);
 			path = ExpenseTracker;
@@ -230,6 +233,7 @@
 				8AF3E25B2075BC7900742B15 /* Shop.swift in Sources */,
 				8AF3E2552075ABC700742B15 /* ReceiptItem.swift in Sources */,
 				8AF3E24E2075A91900742B15 /* Store.swift in Sources */,
+				8A2914912075D84C00263F43 /* ShopCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
