@@ -11,7 +11,7 @@ import Foundation
 class ReceiptItem: Codable {
     var name: String
     var price: Double
-    var EAN: Int64
+    var EAN: String!
     
     private enum CodingKeys: String, CodingKey {
         case name
@@ -23,6 +23,10 @@ class ReceiptItem: Codable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.name = try container.decode(String.self, forKey: .name)
         self.price = try container.decode(Double.self, forKey: .price)
-        self.EAN = try container.decode(Int64.self, forKey: .EAN)
+        if let asNumber = try? container.decode(Int64.self, forKey: .EAN) {
+            EAN = String(asNumber)
+        } else if let asString = try? container.decode(String.self, forKey: .EAN) {
+            EAN = asString
+        }
     }
 }
