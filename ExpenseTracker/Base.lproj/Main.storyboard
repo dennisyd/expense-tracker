@@ -21,7 +21,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k6d-Xd-bnn">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="NPi-7G-paB"/>
+                                    <navigationItem title="Expenses" id="NPi-7G-paB"/>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Mu-q2-7Vg">
@@ -35,6 +35,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZn-z9-4ps" customClass="AmountIndicatorView" customModule="ExpenseTracker" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="SIJ-ZM-G4M"/>
+                                                        <constraint firstAttribute="width" constant="15" id="T76-nT-CzT"/>
+                                                    </constraints>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMq-BS-Deo" userLabel="ShopName">
                                                     <rect key="frame" x="20" y="11" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -50,12 +58,15 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="SMq-BS-Deo" firstAttribute="centerY" secondItem="v9r-LU-Z9E" secondAttribute="centerY" id="0sK-hv-pdt"/>
+                                                <constraint firstItem="qZn-z9-4ps" firstAttribute="top" secondItem="v9r-LU-Z9E" secondAttribute="top" id="6iC-1T-aGV"/>
                                                 <constraint firstItem="SMq-BS-Deo" firstAttribute="leading" secondItem="v9r-LU-Z9E" secondAttribute="leading" constant="20" id="IXJ-a4-nyA"/>
+                                                <constraint firstItem="qZn-z9-4ps" firstAttribute="leading" secondItem="v9r-LU-Z9E" secondAttribute="leading" id="JsX-oc-SRV"/>
                                                 <constraint firstItem="7kn-j7-EMQ" firstAttribute="centerY" secondItem="v9r-LU-Z9E" secondAttribute="centerY" id="ZE3-fo-GcC"/>
                                                 <constraint firstAttribute="trailing" secondItem="7kn-j7-EMQ" secondAttribute="trailing" constant="20" id="evT-f4-fTQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="amountIndicatorView" destination="qZn-z9-4ps" id="N43-hV-qMG"/>
                                             <outlet property="shopNameLabel" destination="SMq-BS-Deo" id="fsC-Dy-6XZ"/>
                                             <outlet property="shopTotalLabel" destination="7kn-j7-EMQ" id="LwC-ns-DAb"/>
                                         </connections>
