@@ -13,7 +13,61 @@ class Store {
     private(set) var receipts = [Receipt]()
     private(set) var shops = [Shop]()
     
+    private let sourceURL = URL(string: "https://api.tabletcommand.com/interview/groceries.json")!
+    
     init() {
+    }
+    
+    func download(completion: @escaping (String?, Error?) -> Void) {
+        let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let destinationUrl = documentsUrl.appendingPathComponent(sourceURL.lastPathComponent)
+        
+        let session = URLSession(configuration: URLSessionConfiguration.default, delegate: nil, delegateQueue: nil)
+        var request = URLRequest(url: sourceURL)
+        request.httpMethod = "GET"
+        let task = session.dataTask(with: request, completionHandler:
+        {
+            data, response, error in
+            if error == nil
+            {
+                if let response = response as? HTTPURLResponse
+                {
+                    if response.statusCode == 200
+                    {
+                        if let data = data
+                        {
+                            if let _ = try? data.write(to: destinationUrl, options: Data.WritingOptions.atomic)
+                            {
+                                completion(destinationUrl.path, error)
+                            }
+                            else
+                            {
+                                completion(destinationUrl.path, error)
+                            }
+                        }
+                        else
+                        {
+                            completion(destinationUrl.path, error)
+                        }
+                    }
+                }
+            }
+            else
+            {
+                completion(destinationUrl.path, error)
+            }
+        })
+        task.resume()
+    }
+    
+    func update(completion: @escaping () -> Void) {
+        self.download(completion: { path, error in
+            if (error != nil && path != nil) {
+                let data = try? Data(contentsOf: URL(fileURLWithPath: path!), options: .mappedIfSafe)
+                self.process(data: data!)
+                completion()
+            }
+        })
     }
     
     func process(data: Data) {

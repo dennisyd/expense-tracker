@@ -170,4 +170,27 @@ class StoreTests: XCTestCase {
         }
     }
     
+    func testDownloadFile() {
+        let sourceURL = URL(string: "https://api.tabletcommand.com/interview/groceries.json")!
+        let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let destinationUrl = documentsUrl.appendingPathComponent(sourceURL.lastPathComponent)
+        
+        XCTAssertFalse(FileManager().fileExists(atPath: destinationUrl.path))
+        
+        let expectation = XCTestExpectation(description: "Download data from server")
+        
+        let store = Store()
+        store.download(completion: { path, error in
+            XCTAssertNotNil(path)
+            XCTAssertNil(error)
+            
+            XCTAssertTrue(FileManager().fileExists(atPath: destinationUrl.path))
+            XCTAssertTrue(FileManager().fileExists(atPath: path!))
+            
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation], timeout: 10.0)
+    }
+    
 }
