@@ -29,7 +29,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! ShopViewController
+            //destinationVC.shop = newProgramVar
+        if let indexPath = self.shopTableView.indexPathForSelectedRow,
+            let cell = self.shopTableView.cellForRow(at: indexPath) as? ShopCellTableViewCell {
+            destinationVC.shop = cell.shop
+        }
+        
+    }
 
 }
 
