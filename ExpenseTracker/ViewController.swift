@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         receiptStore.update(completion: {_ in
             DispatchQueue.main.async {
                 self.shopTableView.reloadData()
+                self.title = "Expenses"
             }
         })
     }
