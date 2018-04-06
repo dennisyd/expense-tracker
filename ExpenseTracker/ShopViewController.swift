@@ -40,7 +40,7 @@ extension ShopViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! ItemTableViewCell
-        cell.format(item: self.shop.items[indexPath.row])
+        cell.item = self.shop.items[indexPath.row]
         return cell
     }
     

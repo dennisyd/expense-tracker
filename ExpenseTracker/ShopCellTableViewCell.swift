@@ -14,7 +14,13 @@ class ShopCellTableViewCell: UITableViewCell {
     @IBOutlet weak var shopTotalLabel: UILabel!
     @IBOutlet weak var amountIndicatorView: AmountIndicatorView!
     
-    weak var shop: Shop!
+    public weak var shop: Shop! {
+        didSet {
+            shopNameLabel.text = shop.name
+            shopTotalLabel.text = shop.totalFormatted
+            amountIndicatorView.setValue(value: shop.total)
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,13 +31,6 @@ class ShopCellTableViewCell: UITableViewCell {
         //super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    
-    func format(shop: Shop) {
-        self.shop = shop;
-        shopNameLabel.text = shop.name
-        shopTotalLabel.text = shop.totalFormatted
-        amountIndicatorView.setValue(value: shop.total)
     }
 
 }
