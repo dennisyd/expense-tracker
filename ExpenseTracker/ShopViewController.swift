@@ -10,7 +10,6 @@ import UIKit
 
 class ShopViewController: UIViewController {
 
-    @IBOutlet weak var navigationTitle: UINavigationItem!
     @IBOutlet weak var itemTableView: UITableView!
     @IBOutlet weak var totalLabel: UILabel!
     
@@ -24,7 +23,7 @@ class ShopViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         totalLabel.text = "Total: \(shop.totalFormatted)"
-        navigationTitle.title = shop.name
+        self.title = shop.name
         super.viewWillAppear(animated)
     }
 
@@ -32,11 +31,6 @@ class ShopViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func dismissViewController(_ sender: Any) {
-        self.dismiss(animated: true, completion: {})
-    }
-
 }
 
 extension ShopViewController : UITableViewDataSource {
