@@ -50,7 +50,7 @@ extension ViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "shopCell", for: indexPath) as! ShopCellTableViewCell
-        cell.format(shop: receiptStore.shops[indexPath.row])
+        cell.shop = receiptStore.shops[indexPath.row]
         return cell
     }
     
