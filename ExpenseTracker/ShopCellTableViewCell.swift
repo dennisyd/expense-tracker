@@ -13,12 +13,18 @@ class ShopCellTableViewCell: UITableViewCell {
     @IBOutlet weak var shopNameLabel: UILabel!
     @IBOutlet weak var shopTotalLabel: UILabel!
     @IBOutlet weak var amountIndicatorView: AmountIndicatorView!
+    @IBOutlet weak var paymentTypeLabel: UILabel!
     
     public weak var shop: Shop! {
         didSet {
             shopNameLabel.text = shop.name
             shopTotalLabel.text = shop.totalFormatted
             amountIndicatorView.setValue(value: shop.total)
+            if (shop.paymentType == "cash") {
+                paymentTypeLabel.text = "💵"
+            } else {
+                paymentTypeLabel.text = "💳"
+            }
         }
     }
     

@@ -49,18 +49,27 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HX4-qJ-VSf" userLabel="PaymentTypeLabel">
+                                                    <rect key="frame" x="263" y="12" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="SMq-BS-Deo" firstAttribute="centerY" secondItem="v9r-LU-Z9E" secondAttribute="centerY" id="0sK-hv-pdt"/>
                                                 <constraint firstItem="qZn-z9-4ps" firstAttribute="top" secondItem="v9r-LU-Z9E" secondAttribute="top" id="6iC-1T-aGV"/>
                                                 <constraint firstItem="SMq-BS-Deo" firstAttribute="leading" secondItem="v9r-LU-Z9E" secondAttribute="leading" constant="20" id="IXJ-a4-nyA"/>
                                                 <constraint firstItem="qZn-z9-4ps" firstAttribute="leading" secondItem="v9r-LU-Z9E" secondAttribute="leading" id="JsX-oc-SRV"/>
+                                                <constraint firstItem="HX4-qJ-VSf" firstAttribute="centerY" secondItem="7kn-j7-EMQ" secondAttribute="centerY" id="O9A-Q9-0PU"/>
                                                 <constraint firstItem="7kn-j7-EMQ" firstAttribute="centerY" secondItem="v9r-LU-Z9E" secondAttribute="centerY" id="ZE3-fo-GcC"/>
+                                                <constraint firstItem="7kn-j7-EMQ" firstAttribute="leading" secondItem="HX4-qJ-VSf" secondAttribute="trailing" constant="8" id="csT-G2-J5A"/>
                                                 <constraint firstAttribute="trailing" secondItem="7kn-j7-EMQ" secondAttribute="trailing" constant="20" id="evT-f4-fTQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="amountIndicatorView" destination="qZn-z9-4ps" id="N43-hV-qMG"/>
+                                            <outlet property="paymentTypeLabel" destination="HX4-qJ-VSf" id="zx5-fC-PVF"/>
                                             <outlet property="shopNameLabel" destination="SMq-BS-Deo" id="fsC-Dy-6XZ"/>
                                             <outlet property="shopTotalLabel" destination="7kn-j7-EMQ" id="LwC-ns-DAb"/>
                                             <segue destination="7Ul-aq-07b" kind="show" id="7bA-7b-XgH"/>

@@ -19,6 +19,18 @@ class Shop {
         }
     }
     
+    var paymentType: String {
+        get {
+            let cashPayments = receipts.filter({ $0.paymentType == "cash" })
+            
+            if cashPayments.count > 0 {
+                return "cash"
+            } else {
+                return "card"
+            }
+        }
+    }
+    
     var totalFormatted: String {
         get {
             return "$\(String(format: "%.2f", self.total))"
@@ -27,8 +39,43 @@ class Shop {
     
     var items: [ReceiptItem] {
         get {
+            
             let items = receipts.flatMap { $0.items }
+            
             return items
+        }
+    }
+    
+    struct groupedItem {
+        let name: String
+        let amount: Double
+        var amountFormatted: String {
+            get {
+                return "$\(String(format: "%.2f", self.amount))"
+            }
+        }
+    }
+    
+    var groupedItems: [groupedItem] {
+        get {
+            // getting all receiptItems from all receipts
+            let items = receipts.flatMap { $0.items }
+            
+            // mapping all receiptItems by item name
+            let crossReferencedItems = items.reduce(into: [String: [ReceiptItem]]()) {
+                $0[$1.name, default: []].append($1)
+            }
+            
+            var itemCollection = [groupedItem]()
+            
+            for item in crossReferencedItems {
+                let amounts = item.value.map { $0.price }
+                let name = item.key + " (\(amounts.count)x)"
+                let i = groupedItem(name: name, amount: amounts.reduce(0, {$0 + $1}))
+                itemCollection.append(i)
+            }
+            return itemCollection
+            
         }
     }
     

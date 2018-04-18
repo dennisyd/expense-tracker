@@ -13,10 +13,10 @@ class ItemTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var amount: UILabel!
     
-    public weak var item: ReceiptItem! {
+    public var item: Shop.groupedItem! {
         didSet {
             title.text = item.name
-            amount.text = item.priceFormatted
+            amount.text = item.amountFormatted
         }
     }
     
