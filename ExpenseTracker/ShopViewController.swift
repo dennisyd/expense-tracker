@@ -35,12 +35,12 @@ class ShopViewController: UIViewController {
 
 extension ShopViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.shop.items.count
+        return self.shop.groupedItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! ItemTableViewCell
-        cell.item = self.shop.items[indexPath.row]
+        cell.item = self.shop.groupedItems[indexPath.row]
         return cell
     }
     
