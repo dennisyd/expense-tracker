@@ -1,0 +1,326 @@
+[
+  {
+    "date": "2018-01-09T07:33:17.339",
+    "shop": "Che Dré",
+    "paid": 20.099999999999998,
+    "payment_type": "card",
+    "items": [
+      {
+        "name": "Flat White",
+        "price": 4.1,
+        "ean": 4252308640648
+      },
+      {
+        "name": "Long Black",
+        "price": 3.8,
+        "ean": 9124964074592
+      },
+      {
+        "name": "Long Black",
+        "price": 3.8,
+        "ean": 9124964074592
+      },
+      {
+        "name": "Almond Croissant",
+        "price": 4.2,
+        "ean": 6518346837654
+      },
+      {
+        "name": "Almond Croissant",
+        "price": 4.2,
+        "ean": 6518346837654
+      }
+    ]
+  },
+  {
+    "date": "2018-02-18T08:54:47.514",
+    "shop": "Love & Nourish",
+    "paid": 21.7,
+    "payment_type": "card",
+    "items": [
+      {
+        "name": "Cappuccino",
+        "price": 3.8,
+        "ean": 2557775661526
+      },
+      {
+        "name": "Flat White",
+        "price": 4.1,
+        "ean": 4252308640648
+      },
+      {
+        "name": "Flat White",
+        "price": 4.1,
+        "ean": 4252308640648
+      },
+      {
+        "name": "Pain Au Chocolat",
+        "price": 5.5,
+        "ean": 3436137903582
+      },
+      {
+        "name": "Almond Croissant",
+        "price": 4.2,
+        "ean": 6518346837654
+      }
+    ]
+  },
+  {
+    "date": "2018-03-08T08:56:34.995",
+    "shop": "Love & Nourish",
+    "paid": 19.8,
+    "payment_type": "card",
+    "items": [
+      {
+        "name": "Cappuccino",
+        "price": 3.8,
+        "ean": 2557775661526
+      },
+      {
+        "name": "Long Black",
+        "price": 3.8,
+        "ean": 9124964074592
+      },
+      {
+        "name": "Long Black",
+        "price": 3.8,
+        "ean": 9124964074592
+      },
+      {
+        "name": "ANZAC Biscuit",
+        "price": 2.1,
+        "ean": 4719853100008
+      },
+      {
+        "name": "Almond Croissant",
+        "price": 4.2,
+        "ean": 6518346837654
+      },
+      {
+        "name": "ANZAC Biscuit",
+        "price": 2.1,
+        "ean": 4719853100008
+      }
+    ]
+  },
+  {
+    "date": "2018-03-09T07:46:36.116",
+    "shop": "Che Dré",
+    "paid": 50,
+    "payment_type": "cash",
+    "items": [
+      {
+        "name": "Flat White",
+        "price": 4.1,
+        "ean": 4252308640648
+      },
+      {
+        "name": "Long Black",
+        "price": 3.8,
+        "ean": 9124964074592
+      },
+      {
+        "name": "Pain Au Chocolat",
+        "price": 5.5,
+        "ean": 3436137903582
+      },
+      {
+        "name": "Almond Croissant",
+        "price": 4.2,
+        "ean": 6518346837654
+      },
+      {
+        "name": "Pain Au Chocolat",
+        "price": 5.5,
+        "ean": 3436137903582
+      }
+    ]
+  },
+  {
+    "date": "2018-01-05T08:55:49.556",
+    "shop": "Tall Timber",
+    "paid": 15.899999999999999,
+    "payment_type": "card",
+    "items": [
+      {
+        "name": "Long Black",
+        "price": 3.8,
+        "ean": 9124964074592
+      },
+      {
+        "name": "Cappuccino",
+        "price": 3.8,
+        "ean": 2557775661526
+      },
+      {
+        "name": "Flat White",
+        "price": 4.1,
+        "ean": 4252308640648
+      },
+      {
+        "name": "ANZAC Biscuit",
+        "price": 2.1,
+        "ean": 4719853100008
+      },
+      {
+        "name": "ANZAC Biscuit",
+        "price": 2.1,
+        "ean": 4719853100008
+      }
+    ]
+  },
+  {
+    "date": "2018-03-07T19:47:25.863",
+    "shop": "Marry's Organics",
+    "paid": 74.2,
+    "payment_type": "card",
+    "items": [
+      {
+        "name": "Bacon",
+        "price": 8.8,
+        "ean": 4211579474147
+      },
+      {
+        "name": "Kale",
+        "price": 7.2,
+        "ean": 8185225021947
+      },
+      {
+        "name": "Milk",
+        "price": 4.3,
+        "ean": 4554776345262
+      },
+      {
+        "name": "Raw Almonds",
+        "price": 6.1,
+        "ean": "0365020656669"
+      },
+      {
+        "name": "Ghee",
+        "price": 9.2,
+        "ean": 3049238699478
+      },
+      {
+        "name": "Mango",
+        "price": 4.7,
+        "ean": 2963339812998
+      },
+      {
+        "name": "Raw Almonds",
+        "price": 6.1,
+        "ean": "0365020656669"
+      },
+      {
+        "name": "Eggs",
+        "price": 7.2,
+        "ean": 4641812239873
+      },
+      {
+        "name": "Eggs",
+        "price": 7.2,
+        "ean": 4641812239873
+      },
+      {
+        "name": "Mango",
+        "price": 4.7,
+        "ean": 2963339812998
+      },
+      {
+        "name": "Mango",
+        "price": -4.7,
+        "ean": 2963339812998
+      },
+      {
+        "name": "Kale",
+        "price": 7.2,
+        "ean": 8185225021947
+      },
+      {
+        "name": "Feta Cheese",
+        "price": 6.2,
+        "ean": 4535253404986
+      }
+    ]
+  },
+  {
+    "date": "2018-01-23T17:01:51.930",
+    "shop": "Alimentari",
+    "paid": 19.700000000000003,
+    "payment_type": "card",
+    "items": [
+      {
+        "name": "Olive Oil",
+        "price": 9.3,
+        "ean": 6197832180605
+      },
+      {
+        "name": "Milk",
+        "price": 4.3,
+        "ean": 4554776345262
+      },
+      {
+        "name": "Raw Almonds",
+        "price": 6.1,
+        "ean": "0365020656669"
+      }
+    ]
+  },
+  {
+    "date": "2018-03-28T19:16:57.147",
+    "shop": "Alimentari",
+    "paid": 96,
+    "payment_type": "cash",
+    "items": [
+      {
+        "name": "Feta Cheese",
+        "price": 6.2,
+        "ean": 4535253404986
+      },
+      {
+        "name": "Raw Almonds",
+        "price": 6.1,
+        "ean": "0365020656669"
+      },
+      {
+        "name": "Avocado",
+        "price": 3.5,
+        "ean": 3370725386497
+      },
+      {
+        "name": "Kale",
+        "price": 7.2,
+        "ean": 8185225021947
+      },
+      {
+        "name": "Raw Almonds",
+        "price": 6.1,
+        "ean": "0365020656669"
+      },
+      {
+        "name": "Olive Oil",
+        "price": 9.3,
+        "ean": 6197832180605
+      },
+      {
+        "name": "Eggs",
+        "price": 7.2,
+        "ean": 4641812239873
+      },
+      {
+        "name": "Eggs",
+        "price": 7.2,
+        "ean": 4641812239873
+      },
+      {
+        "name": "Eggs",
+        "price": -7.2,
+        "ean": 4641812239873
+      },
+      {
+        "name": "Avocado",
+        "price": 3.5,
+        "ean": 3370725386497
+      }
+    ]
+  }
+]
