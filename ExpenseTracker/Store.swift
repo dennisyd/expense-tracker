@@ -13,7 +13,7 @@ class Store {
     private(set) var receipts = [Receipt]()
     private(set) var shops = [Shop]()
     
-    private let sourceURL = URL(string: "https://api.tabletcommand.com/interview/groceries.json")!
+    private let sourceURL = URL(string: "https://raw.githubusercontent.com/peteralt/expenseTracker/master/ExpenseTracker/server_data/groceries.json")!
     
     init() {
     }
