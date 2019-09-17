@@ -1,3 +1,5 @@
+# Challenge
+
 Our fictional startup is building a product to help people keep track on what they’re spending their money on. To do so, we’ll build an iPhone app that list all the places where they’ve made purchases, giving them the option to inspect what items were purchased on each place.
 
 The app should roughly look like the following image. Please use default controls, with default settings (font/size/colour), except for the annotated elements (amount indicator and total).
@@ -27,7 +29,8 @@ The user’s expenses list should be downloaded from here and stored locally. Th
 ]
 ```
 
-Dos and don’ts:
+
+# Do's and don’ts:
 
 * the app should be built using native tools, Swift/Obj-C (no cross-platform frameworks like ReactNative, Xamarin, etc)
 
@@ -36,3 +39,7 @@ Dos and don’ts:
 * for source control, please use git, having as many commits as necessary. Idealy, there should be more than two commits.
 
 * we’ll be checking for good app practicies (e.g. app was not developed in one file, no priceLabel.text = json[“item”].price)
+
+# Should look like this
+
+![](https://github.com/peteralt/expenseTracker/raw/master/expenses-list.png)
